@@ -1,10 +1,12 @@
-﻿namespace ORM_Assignment1
+﻿using ORM_Assignment1.Contexts;
+
+namespace ORM_Assignment1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            using BookStoreDBContext context = new BookStoreDBContext();
         }
     }
 }
